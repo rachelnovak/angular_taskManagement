@@ -1,0 +1,27 @@
+<mat-card class="col-md-6">
+  <mat-card-content class="mat-card-content col-md-12">
+    <h3>{{hour.Name}}</h3>
+    <hr class="colorgraph">
+    <label class="col-md-6">worked hours:</label>
+    <label class="col-md-6">{{hour.Hours}}</label>
+    <label class="col-md-6" *ngIf="hour.Hours==''">0</label>
+    <br>
+    <label class="col-md-6">allocated hours:</label>
+    <label class="col-md-4">{{hour.allocatedHours}}</label>
+  </mat-card-content>
+</mat-card>
+
+<div *ngIf="json.parse(localStorage.getItem(global.currentUser)).StatusId==3 && hour.allocatedHours!=0">
+    <div class="play start" (click)="StartTimer()"><i class="fa fa-play-circle"></i></div> 
+    <div class="play stop" *ngIf="enableStop" (click)="StopTimer()"><i class="fa fa-pause-circle"></i></div> 
+  <b>
+    <span *ngIf="zeroFlagH">0</span>{{timerHours}}:
+    <span *ngIf="zeroFlagM">0</span>{{timerMinutes}}:
+    <span *ngIf="zeroFlagS">0</span>{{timerSeconds}}
+  </b>
+</div>
+<div *ngIf="isEdit">
+  <button class="button col-md-offset-4 col-md-4">change allocated hours</button>
+</div>
+<br>
+

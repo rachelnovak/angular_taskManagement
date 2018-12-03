@@ -1,0 +1,25 @@
+
+.play i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 50px;
+  background: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 51px;
+  line-height: 50px;
+  z-index:2;
+}
+
+.play i:hover{
+	cursor:pointer;
+}
+
+.start{
+    color: green;
+}
+
+.stop{
+    color: red;
+}

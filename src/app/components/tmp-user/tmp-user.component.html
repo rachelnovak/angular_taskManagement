@@ -1,0 +1,34 @@
+<mat-card class="col-md-3">
+    <mat-card-content class="mat-card-content">
+        <img *ngIf="user.profileImageName" src="{{global.Upload}}/UsersProfiles/{{user.profileImageName}}">
+        <i *ngIf="!user.profileImageName" class="fa fa-user-circle-o"></i>
+        <!-- <img [src]="imageUrl"> -->
+        <h3>{{user.Name}}</h3>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <ng-container *ngIf="isManager">
+            <button mat-raised-button color="primary" (click)="edit()">
+                <i class="fa fa-pencil-square-o"></i>
+                Edit
+            </button>
+
+            <button mat-raised-button color="primary"  (click)="showConfirm()">
+                <i class="fa fa-trash-o"></i>
+                Delete
+            </button>
+
+        </ng-container>
+
+        <ng-container *ngIf="!isManager">
+            <button mat-raised-button color="primary" (click)="workerHours()">
+                <i class="fa fa-clock-o"></i>
+                Update Hours
+            </button>
+        </ng-container>
+
+    </mat-card-actions>
+</mat-card>
+
+
+<!-- <p-toast [style]="{marginTop: '80px'}" position="top-center" key="tc"></p-toast> -->
