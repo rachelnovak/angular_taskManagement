@@ -31,7 +31,6 @@ import {
 
 import {
   //services
-  BaseService,
   AuthenticationService,
   UserService,
   ProjectService,
@@ -40,8 +39,6 @@ import {
   TeamLeaderService,
   ExcelService,
   ReportService,
-  //pipe
-  ProjectFilterPipe,
   //components
   AppComponent,
   HeaderComponent,
@@ -111,7 +108,6 @@ import { AuthGuard } from './shared/auth.guard';
     TmpWorkerComponent,
     HoursComponent,
     SendEmailComponent,
-    ProjectFilterPipe,
     ProjectReportListComponent,
     FooterComponent
   ],
@@ -151,7 +147,6 @@ import { AuthGuard } from './shared/auth.guard';
   ],
 
   providers: [
-    BaseService,
     AuthenticationService,
     UserService,
     ProjectService,

@@ -54,9 +54,10 @@ export class WorkerHoursComponent implements OnInit {
   }
 
   onSubmit() {
+    //update the hours 
     this.hoursService.updaterWorkerHours(this.workerHours.Id).subscribe(
       (workerHours: WorkerHours) => {
-        this.workerHours = workerHours;//todo=what return value?
+        this.workerHours = workerHours;
       },
       err => console.log(err));
   }

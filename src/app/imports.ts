@@ -10,7 +10,7 @@ export { Status } from './shared/models/status.model';
 export { UserProject } from './shared/models/user-project.model';
 export { WorkerHours } from './shared/models/worker-hours.model';
 export { ProjectFilter } from './shared/models/project-filter.model';
-export { DetailsWorkerInProjects } from "./shared/models/detailsWorkerInProjects";
+export { DetailsWorkerInProjects } from "./shared/models/details_worker_in_projects";
 export { TreeTable } from "./shared/models/treeTable";
 
 //enum
@@ -20,7 +20,6 @@ export { Estatus } from './shared/models/user.model';
 export { stringValidatorArr, numberValidatorArr, confirmPasswordValidator, DateValidator } from './shared/validators/validators';
 
 //services
-export { BaseService } from './shared/services/base.service';
 export { UserService } from './shared/services/user.service';
 export { AuthenticationService } from './shared/services/authentication.service';
 export { ProjectService } from './shared/services/project.service';
@@ -33,8 +32,6 @@ export { TreeTableService } from './shared/services/tree-table.service';
 
 export { Global } from './shared/global';
 
-//pipes
-export { ProjectFilterPipe } from './shared/pipes/project-filter.pipe';
 
 //----------------------components-----------------------
 
