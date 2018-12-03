@@ -32,13 +32,6 @@ export class TmpWorkerComponent implements OnInit {
   }
 
   openWorkerDeatails(worker: User) {
-    //   let navigationExtras: NavigationExtras = {
-    //     queryParams: {
-    //       "worker": JSON.stringify(worker)
-    //     }
-    //   };
-    //   this.router.navigate([`taskManagement/teamLeader/WorkerDeatails`], navigationExtras);
-    // }
     this.router.navigate([`taskManagement/teamLeader/WorkerDeatails`, worker.Id]);
   }
 }

@@ -75,7 +75,6 @@ export class UserFormComponent implements OnInit {
         name: [this.user.Name, stringValidatorArr("name", 2, 15, /^[A-Za-z]+$/)],
         userName: [this.user.UserName, stringValidatorArr("user name", 2, 15, /^[A-Za-z]+$/)],
         password: [this.user.Password, stringValidatorArr("password", 5, 10)],
-        // confirmPassword: ['', stringValidatorArr("confirmPassword", 5, 10)],
         email: [this.user.EMail, stringValidatorArr("email", 15, 30, /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)],
         statusId: [this.user.StatusId],
         managerId: [this.user.ManagerId]
@@ -86,7 +85,6 @@ export class UserFormComponent implements OnInit {
         name: [this.user.Name, stringValidatorArr("name", 2, 15, /^[A-Za-z]+$/)],
         userName: [this.user.UserName, stringValidatorArr("user name", 2, 15, /^[A-Za-z]+$/)],
         password: ['', null],
-        // confirmPassword: ['', stringValidatorArr("confirmPassword", 5, 10)],
         email: [this.user.EMail, stringValidatorArr("email", 15, 30, /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)],
         statusId: [this.user.StatusId],
         managerId: [this.user.ManagerId]
@@ -108,7 +106,6 @@ export class UserFormComponent implements OnInit {
     this.userService.getAllTeamLeaders().subscribe(
       (teamLeaders: User[]) => {
         this.allTeamLeaders = teamLeaders;
-        //this.getAllProjects();  by the team leader???
       },
       err => console.log(err));
   }

@@ -14,7 +14,6 @@
             <mat-form-field>
               <input type="{{types[i]}}" formControlName="{{control}}" matInput id="{{control}}">
             </mat-form-field>
-            <!-- *ngIf="!this.password.value && control=='password'" -->
             <span class="highlight"></span>
             <span class="bar"></span>
             <label for="{{control}}" [ngClass]="{'label':true,'full':userFormGroup.controls[control].value!=''}">{{control}}:</label>
@@ -23,17 +22,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Confirm Password -->
-        <!-- <div class="group">
-          <input formControlName="confirmPassword" id="confirmPassword" class="inputMaterial" type="password">
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label for="confirmPassword" [ngClass]="{'label':true,'full':confirmPassword.value!=''}">Confirm Password</label>
-          <div *ngIf="confirmPassword.errors&&confirmPassword.touched">
-            <p *ngFor="let err of objectHolder.values(confirmPassword.errors)" class="myAlert">{{err}}</p>
-          </div>
-        </div> -->
 
         <!-- Status -->
         <div class="group" *ngIf="allStatuses.length>0">
@@ -69,4 +57,3 @@
   </div>
 </div>
 
-<!-- <p-toast [style]="{marginTop: '80px'}" position="top-center" key="tc"></p-toast> -->

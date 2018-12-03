@@ -33,10 +33,7 @@ export class TmpUserComponent {
 
   //-----------------METHODS--------------------
 
-  edit() {
-    this.router.navigate(['/taskManagement/manager/userManagement/editUser', this.user.Id]);
-  }
-
+  //before delete
   showConfirm() {
     {
       this.dialogService.addDialog(ConfirmComponent, {
@@ -65,23 +62,26 @@ export class TmpUserComponent {
     }
   }
 
+  
+/**
+ * function
+ * delete the user  
+ */
   deleteUser() {
     this.userService.deleteUser(this.user.Id).subscribe(
       (deleted: boolean) => {
         if (deleted) {
           this.messageService.add({key: "tc", severity:"success", summary: "", detail:"The user deleted succsesully"});
-          // this.dialogService.addDialog(ConfirmComponent, {
-          //   title: 'Delete Worker',
-          //   msg: 'The user deleted succsesully',
-          //   autoClosing: true
-          // }).subscribe(() => {
-          // });
-
           this.userService.updateUserListSubject.next();
         }
       },
       err => console.log(err));
 
+  }
+
+//---------------navigate----------
+  edit() {
+    this.router.navigate(['/taskManagement/manager/userManagement/editUser', this.user.Id]);
   }
 
   workerHours() {

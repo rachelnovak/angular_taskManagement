@@ -74,7 +74,6 @@ import {
   HoursComponent,
   SendEmailComponent,
   ProjectReportListComponent,
-  TreeTableComponent,
   FooterComponent,
   routing
 } from './imports';
@@ -114,7 +113,6 @@ import { AuthGuard } from './shared/auth.guard';
     SendEmailComponent,
     ProjectFilterPipe,
     ProjectReportListComponent,
-    TreeTableComponent,
     FooterComponent
   ],
 

@@ -70,7 +70,6 @@ export { HoursComponent } from './components/hours/hours.component';
 export { TmpWorkerComponent } from './components/tmp-worker/tmp-worker.component';
 export { SendEmailComponent } from './components/send-email/send-email.component';
 export { ProjectReportListComponent } from './components/project-report-list/project-report-list.component';
-export { TreeTableComponent } from './components/tree-table/tree-table.component';
 
 //routing
 export { routing } from './app.routing';

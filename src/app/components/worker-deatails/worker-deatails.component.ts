@@ -60,10 +60,9 @@ export class WorkerDeatailsComponent implements OnInit {
     });
   }
 
+  
   changeHours() {
-
     //check if the value is valid:
-
     //get the status-the department
     this.userService.getAllStatuses().subscribe(
       res => {
