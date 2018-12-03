@@ -46,12 +46,11 @@ export class WorkerTasksComponent implements OnInit {
       if (isConfirmed) {
         this.workerHoursService.sendMsg().subscribe(res => {
           if (res==true){
-            this.messageService.add({key: 'tc',severity:'success', summary: '', detail:'The email sent successfuly'}); alert("gfdgd");
+            this.messageService.add({key: 'tc',severity:'success', summary: '', detail:'The email sent successfuly'});
           }
           
           else{
             this.messageService.add({key: 'tc',severity:'error', summary: '', detail:'faild sending, try again'}); 
-            alert("dfz");
           }
             
         })
