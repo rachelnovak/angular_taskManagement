@@ -61,7 +61,6 @@ export { TeamLeaderComponent } from './components/team-leader/team-leader.compon
 export { WorkerTasksComponent } from './components/worker-tasks/worker-tasks.component';
 export { WorkerComponent } from './components/worker/worker.component';
 export { WorkerHoursComponent } from './components/worker-hours/worker-hours.component';
-export { TimerComponent } from './components/timer/timer.component';
 export { DatePickerComponent } from './components/date-picker/date-picker.component';
 export { ChartComponent } from './components/chart/chart.component';
 export { HoursChartComponent } from './components/hours-chart/hours-chart.component';
@@ -70,7 +69,6 @@ export { WorkerDeatailsComponent } from './components/worker-deatails/worker-dea
 export { HoursComponent } from './components/hours/hours.component';
 export { TmpWorkerComponent } from './components/tmp-worker/tmp-worker.component';
 export { SendEmailComponent } from './components/send-email/send-email.component';
-export { ReportComponent } from './components/report/report.component';
 export { ProjectReportListComponent } from './components/project-report-list/project-report-list.component';
 export { TreeTableComponent } from './components/tree-table/tree-table.component';
 
