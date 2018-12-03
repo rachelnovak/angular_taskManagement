@@ -1,0 +1,5 @@
+can activate--ניתוב
+mail message
+S:\Tamar\17.09.2018\פרויקט\winForms-TR\TaskManagment
+-validation name proj number
+-send auto
